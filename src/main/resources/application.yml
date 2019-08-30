@@ -1,6 +1,13 @@
 server:
-  port: 9090
+  port: 10999
 spring:
   redis:
     host: 127.0.0.1
     port: 6379
+  data:
+    mongodb:
+      host: localhost
+      database: admin
+      port: 27017
+#      username: admin
+#      password: admin

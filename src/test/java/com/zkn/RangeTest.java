@@ -10,7 +10,6 @@ import reactor.core.publisher.Flux;
 public class RangeTest {
 
     public static void main(String[] args) {
-        Flux.range(0, 100).subscribe(System.out::println);
-        System.out.println("xxzz");
+        Flux.range(0, 100).map(i -> i * 2).filter(i -> i < 150).subscribe(System.out::println);
     }
 }

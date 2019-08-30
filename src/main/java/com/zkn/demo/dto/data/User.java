@@ -1,7 +1,8 @@
-package com.zkn.demo.data.dto;
+package com.zkn.demo.dto.data;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
+import org.springframework.data.annotation.Id;
 
 /**
  * @author 郑凯努
@@ -12,6 +13,7 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 public class User {
 
+    @Id
     private Long id;
 
     private String name;
